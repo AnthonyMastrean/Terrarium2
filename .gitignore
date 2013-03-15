@@ -6,3 +6,5 @@ Client/_Upgrade*/
 Client/UpgradeLog.*
 *.sdf
 *.opensdf
+*.suo
+*.user

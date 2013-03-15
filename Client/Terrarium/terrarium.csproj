@@ -30,12 +30,15 @@
     <FallbackCulture>en-US</FallbackCulture>
     <UpdateUrlEnabled>false</UpdateUrlEnabled>
     <WebPageEnabled>true</WebPageEnabled>
-    <ApplicationRevision>6</ApplicationRevision>
     <SignManifests>true</SignManifests>
     <ManifestCertificateThumbprint>150FC1BAABF46D48B36BA2D8A9E6071669EF0737</ManifestCertificateThumbprint>
     <ManifestKeyFile>
     </ManifestKeyFile>
     <TargetZone>LocalIntranet</TargetZone>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
     <PublishUrl>\\localhost\C%24\Inetpub\wwwroot\Terrrarium 2.0\Publish\</PublishUrl>
     <Install>true</Install>
     <InstallFrom>Web</InstallFrom>
@@ -52,12 +55,10 @@
     <PublisherName>Terrarium</PublisherName>
     <WebPage>default.aspx</WebPage>
     <TrustUrlParameters>true</TrustUrlParameters>
+    <ApplicationRevision>6</ApplicationRevision>
     <ApplicationVersion>2.0.50522.8</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
-    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
-    <UpgradeBackupLocation>
-    </UpgradeBackupLocation>
-    <OldToolsVersion>2.0</OldToolsVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <OutputPath>bin\Debug\</OutputPath>
@@ -137,10 +138,6 @@
       <Name>System.XML</Name>
       <HintPath>..\..\..\..\..\WINNT\Microsoft.NET\Framework\v1.0.3705\System.XML.dll</HintPath>
     </Reference>
-    <ProjectReference Include="..\AsmCheck\asmcheck.vcxproj">
-      <Project>{CB41592F-C650-4475-9BA3-70A387BFF25E}</Project>
-      <Name>asmcheck</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Configuration\Configuration.csproj">
       <Name>Configuration</Name>
       <Project>{A7445FEE-D531-460F-99F9-80FD7345072A}</Project>
@@ -350,10 +347,20 @@
     </BootstrapperFile>
   </ItemGroup>
   <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
     <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
       <Visible>False</Visible>
       <ProductName>.NET Framework 2.0</ProductName>
       <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
