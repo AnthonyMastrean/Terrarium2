@@ -1,0 +1,8 @@
+bin/
+obj/
+Client/AsmCheck/Debug/
+Client/Backup/
+Client/_Upgrade*/
+Client/UpgradeLog.*
+*.sdf
+*.opensdf
